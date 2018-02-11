@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .row.page-header
+        .col-lg-12
+            h1 Assignment 3 List Editor
+            h3 To update the current list, please enter your data below:
+    .row
+        .col-xs-12.col-md-6
+            .form-group
+                label.col-sm-2.control-label(for="notes") Notes
+                .col-sm-10
+                    textarea#notes.form-control(notes="notes", rows="10")
+            button.btn.btn-default.pull-right Save
+            button.btn.btn-default.pull-left Delete
+        .col-xs-12.col-md-4
