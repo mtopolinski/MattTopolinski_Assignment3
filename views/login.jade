@@ -1,5 +1,17 @@
 extends layout
 
 block content
-    h1= title
-    p Hello, please enter username and password to login:
+    .row.page-header
+        .col-lg-12
+            h1 Assignment 3 Authentication Page
+            h3 Hello, please enter username and password to login:
+    .row
+        .col-xs-12.col-md-6
+            .form-group
+                label.col-xs-10.col-sm-2.control-label(for="username") Username
+                    input#username.form-control(username="username")
+            .form-group
+                 label.col-xs-10.col-sm-2.control-label(for="password") Password
+                    input#password.form-control(password="password")
+            button.btn.btn-default.pull-right Submit
+        .col-xs-12.col-md-4
