@@ -1,6 +1,21 @@
 extends layout
 
 block content
+    body
+        .navbar.navbar-default.navbar-fixed-top
+            .container
+                .navbar-header
+                    a.navbar-brand(href='/') Site Navigation
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                #navbar-main.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href='/login/') Login Page
+                        li
+                            a(href='/listEdit/') List Editor
     .row.page-header
         .col-lg-12
             h1 Assignment 3 List Page
@@ -28,3 +43,8 @@ block content
             | <br /><br />
             | Listing 10
             | <br /><br />
+    .row
+        .col-xs-12.col-md-6
+            .form-group
+            button.btn.btn-default.pull-right Add a New List
+        .col-xs-12.col-md-4
