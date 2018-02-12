@@ -11,7 +11,7 @@ Objectives:
 Create a repository
   *Create a Github repository called FirstNameLastName_Assignment3
     o It can be public or private
-    o If it is private, go to Settings  Collaborators and add bendalgaard
+    o If it is private, go to Settings -> Collaborators and add bendalgaard
   * Add a .gitignore file for Node.js
   * Add a README.md file
 
