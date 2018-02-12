@@ -5,7 +5,7 @@ block content
         .navbar.navbar-default.navbar-fixed-top
             .container
                 .navbar-header
-                    a.navbar-brand(href='/') Site Navigation
+                    a.navbar-brand Site Navigation
                     button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
                         span.icon-bar
                         span.icon-bar
@@ -25,7 +25,9 @@ block content
             .form-group
                 label.col-sm-2.control-label(for="notes") Notes
                 .col-sm-10
-                    textarea#notes.form-control(notes="notes", rows="10")
-            button.btn.btn-default.pull-right Save
-            button.btn.btn-default.pull-left Delete
+                    textarea#notes.form-control(notes="notes", rows="20")
+                    <br /><br/>
+            a(href='/listEdit'): button.btn.btn-default.pull-right(type="button") Delete
+            a(href='/list'): button.btn.btn-primary.pull-right(type="button") Save
         .col-xs-12.col-md-4
+            <br /><br/>

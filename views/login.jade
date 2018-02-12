@@ -23,10 +23,12 @@ block content
     .row
         .col-xs-12.col-md-6
             .form-group
-                label.col-xs-10.col-sm-2.control-label(for="username") Username
+                label.col-xs-10.col-sm-2.control-label(for="username") Username:
                     input#username.form-control(username="username")
-            .form-group
-                 label.col-xs-10.col-sm-2.control-label(for="password") Password
+                    | <br /><br/>
+                 label.col-xs-10.col-sm-2.control-label(for="password") Password:
                     input#password.form-control(password="password")
-            button.btn.btn-default.pull-right Submit
+            | <br /><br />
+            a(href='/list'): button.btn.btn-default.pull-right(type="button") Submit
+            | <br /><br />
         .col-xs-12.col-md-4
